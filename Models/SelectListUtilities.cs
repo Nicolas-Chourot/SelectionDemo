@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace SelectionDemo.Models
-{
+{    
+    // Auteur: Nicolas Chourot
     public class SelectListUtilities<T>
     {
         public static SelectList Convert(IEnumerable<T> collection, string targetField = "Name", string defaultText = "")

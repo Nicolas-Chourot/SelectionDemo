@@ -1,7 +1,7 @@
 ﻿using Microsoft.Ajax.Utilities;
 using System.Collections.Generic;
 using System.Linq;
-
+// Auteur: Nicolas Chourot 2026
 namespace SelectionDemo.Models
 {
     
