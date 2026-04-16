@@ -63,3 +63,8 @@ select option {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.icon{
+    color: dodgerblue;
+    font-size: 1.5em;
+}

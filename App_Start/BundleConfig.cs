@@ -9,11 +9,6 @@ namespace SelectionDemo
         public static void RegisterBundles(BundleCollection bundles)
         {
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                                "~/Content/Selections.css",
-                                "~/Content/site.css"));
-            bundles.Add(new ScriptBundle("~/bundles/scripts").Include(
-                            "~/Scripts/selections.js"));
         }
     }
 }

@@ -201,7 +201,7 @@ namespace SelectionDemo.Models
             Items.Add(new Color { Id = index, Name = name, Hex = hex });
         }
 
-        public List<Color> ToList() => Items.OrderBy(i => i.Name).ToList();
+        public List<Color> ToList() => Items.ToList();
         public Color Get(int id) => Items[id-1];
     }
 
