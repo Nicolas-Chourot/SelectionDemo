@@ -1,6 +1,6 @@
 ﻿
 @{ ViewBag.Title = "Edit"; }
-
+<hr />
 <h2>Sélection de couleurs</h2>
 <hr />
 
@@ -9,7 +9,9 @@
     @Helper.SelectionLists("selectedColorsId", (SelectList)ViewBag.SelectedColors, (SelectList)ViewBag.AllColors)
 
     <br />
-    <input type="submit" value="Soumettre" class="form-control" />
+    <div style="display:flex; justify-content:center">
+        <input type="submit" value="Soumettre" class="btn btn-primary" />
+    </div>
 }
 
 @section Scripts {

@@ -71,7 +71,6 @@ namespace SelectionDemo.Models
             Add("darkgoldenrod", "#b8860b");
             Add("darkgray", "#a9a9a9");
             Add("darkgreen", "#006400");
-            Add("darkgrey", "#a9a9a9");
             Add("darkkhaki", "#bdb76b");
             Add("darkmagenta", "#8b008b");
             Add("darkolivegreen", "#556b2f");
@@ -81,14 +80,12 @@ namespace SelectionDemo.Models
             Add("darksalmon", "#e9967a");
             Add("darkseagreen", "#8fbc8f");
             Add("darkslateblue", "#483d8b");
-            Add("darkslategray", "#2f4f4f");
             Add("darkslategrey", "#2f4f4f");
             Add("darkturquoise", "#00ced1");
             Add("darkviolet", "#9400d3");
             Add("deeppink", "#ff1493");
             Add("deepskyblue", "#00bfff");
             Add("dimgray", "#696969");
-            Add("dimgrey", "#696969");
             Add("dodgerblue", "#1e90ff");
             Add("firebrick", "#b22222");
             Add("floralwhite", "#fffaf0");
@@ -98,7 +95,6 @@ namespace SelectionDemo.Models
             Add("ghostwhite", "#f8f8ff");
             Add("goldenrod", "#daa520");
             Add("gold", "#ffd700");
-            Add("gray", "#808080");
             Add("green", "#008000");
             Add("greenyellow", "#adff2f");
             Add("grey", "#808080");
@@ -118,13 +114,11 @@ namespace SelectionDemo.Models
             Add("lightgoldenrodyellow", "#fafad2");
             Add("lightgray", "#d3d3d3");
             Add("lightgreen", "#90ee90");
-            Add("lightgrey", "#d3d3d3");
             Add("lightpink", "#ffb6c1");
             Add("lightsalmon", "#ffa07a");
             Add("lightseagreen", "#20b2aa");
             Add("lightskyblue", "#87cefa");
             Add("lightslategray", "#778899");
-            Add("lightslategrey", "#778899");
             Add("lightsteelblue", "#b0c4de");
             Add("lightyellow", "#ffffe0");
             Add("lime", "#00ff00");
@@ -178,7 +172,6 @@ namespace SelectionDemo.Models
             Add("skyblue", "#87ceeb");
             Add("slateblue", "#6a5acd");
             Add("slategray", "#708090");
-            Add("slategrey", "#708090");
             Add("snow", "#fffafa");
             Add("springgreen", "#00ff7f");
             Add("steelblue", "#4682b4");
