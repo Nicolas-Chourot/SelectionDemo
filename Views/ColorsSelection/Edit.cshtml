@@ -6,7 +6,7 @@
 
 @using (Html.BeginForm())
 {
-    @Helper.SelectionLists("selectedColorsId", (SelectList)ViewBag.SelectedColors, (SelectList)ViewBag.AllColors)
+    @Helper.SelectionLists("ColorChoicesId", (SelectList)ViewBag.ColorChoices, (SelectList)ViewBag.Colors)
 
     <br />
     <div style="display:flex; justify-content:center">

@@ -11,19 +11,19 @@ namespace SelectionDemo.Controllers
     {
         public ActionResult Index()
         {
-            return View(DB.SelectedColors.ToList());
+            return View(DB.ColorChoices.ToList());
         }
 
         public ActionResult Edit()
         {
-            ViewBag.SelectedColors = SelectListUtilities<Color>.Convert(DB.SelectedColors.ToList(), "Caption");
-            ViewBag.AllColors = SelectListUtilities<Color>.Convert(DB.AllColors.ToList(), "Caption");
+            ViewBag.ColorChoices = SelectListUtilities<Color>.Convert(DB.ColorChoices.ToList(), "Caption");
+            ViewBag.Colors = SelectListUtilities<Color>.Convert(DB.Colors.ToList(), "Caption");
             return View();
         }
         [HttpPost]
-        public ActionResult Edit(List<int> selectedColorsId)
+        public ActionResult Edit(List<int> ColorChoicesId)
         {
-            DB.SelectedColors.Update(selectedColorsId);
+            DB.ColorChoices.Update(ColorChoicesId);
             return RedirectToAction("Index");
         }
     }

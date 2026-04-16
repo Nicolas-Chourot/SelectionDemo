@@ -4,31 +4,7 @@ using System.Linq;
 
 namespace SelectionDemo.Models
 {
-    public class ColorSelection
-    {
-        public int ColorId { get; set; }
-        public Color Color => DB.AllColors.Get(ColorId);
-    }
-    public class ColorsSelection
-    {
-        private List<ColorSelection> _colors = new List<ColorSelection>();
-        public List<Color> ToList()
-        {
-            List<Color> colors = new List<Color>();
-            foreach (var item in _colors)
-            {
-                colors.Add(item.Color);
-            }
-            return colors;
-        }
-        public void Update(List<int> selectedColorsId)
-        {
-            _colors.Clear();
-            if (selectedColorsId != null)
-                foreach (int colorId in selectedColorsId)
-                    _colors.Add(new ColorSelection { ColorId = colorId });
-        }
-    }
+    
     public class Color
     {
         public int Id { get; set; }
@@ -36,6 +12,7 @@ namespace SelectionDemo.Models
         public string Hex { get; set; }
         public string Caption => Hex + " " + Name;
     }
+
     public class Colors
     {
         public Colors()
@@ -198,6 +175,33 @@ namespace SelectionDemo.Models
         public Color Get(int id) => Items[id-1];
     }
 
+    public class ColorChoice
+    {
+        public int ColorId { get; set; }
+        public Color Color => DB.Colors.Get(ColorId);
+    }
+
+    public class ColorChoices
+    {
+        private List<ColorChoice> _colors = new List<ColorChoice>();
+        public List<Color> ToList()
+        {
+            List<Color> colors = new List<Color>();
+            foreach (var item in _colors)
+            {
+                colors.Add(item.Color);
+            }
+            return colors;
+        }
+        public void Update(List<int> ColorChoicesId)
+        {
+            _colors.Clear();
+            if (ColorChoicesId != null)
+                foreach (int colorId in ColorChoicesId)
+                    _colors.Add(new ColorChoice { ColorId = colorId });
+        }
+    }
+
     public sealed class DB
     {
         #region singleton setup
@@ -205,8 +209,8 @@ namespace SelectionDemo.Models
         public static DB Instance { get { return instance; } }
         #endregion
 
-        static public ColorsSelection SelectedColors = new ColorsSelection();
-        static public Colors AllColors = new Colors();
+        static public ColorChoices ColorChoices = new ColorChoices();
+        static public Colors Colors = new Colors();
     }
 
 }
