@@ -16,7 +16,9 @@ namespace SelectionDemo.Controllers
 
         public ActionResult Edit()
         {
+            // prepare a selectlist that contain colors choices
             ViewBag.ColorChoices = SelectListUtilities<Color>.Convert(DB.ColorChoices.ToList(), "Caption");
+            // prepare a selectlist that contain all the colors
             ViewBag.Colors = SelectListUtilities<Color>.Convert(DB.Colors.ToList(), "Caption");
             return View();
         }

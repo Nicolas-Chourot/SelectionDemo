@@ -6,6 +6,7 @@
 
 @using (Html.BeginForm())
 {
+    // Render the selection control 
     @Helper.SelectionLists("ColorChoicesId", (SelectList)ViewBag.ColorChoices, (SelectList)ViewBag.Colors)
 
     <br />
