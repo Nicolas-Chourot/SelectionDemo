@@ -183,7 +183,7 @@ namespace SelectionDemo.Models
 
     public class ColorChoices
     {
-        private List<ColorChoice> _colors = new List<ColorChoice>();
+        private readonly List<ColorChoice> _colors = new List<ColorChoice>();
         public List<Color> ToList()
         {
             List<Color> colors = new List<Color>();
