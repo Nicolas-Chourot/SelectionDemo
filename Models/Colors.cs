@@ -164,7 +164,7 @@ namespace SelectionDemo.Models
             Add("yellow", "#ffff00");
             Add("yellowgreen", "#9acd32");
         }
-        private List<Color> Items = new List<Color>();
+        private readonly List<Color> Items = new List<Color>();
         private void Add(string name, string hex)
         {
             index++;
