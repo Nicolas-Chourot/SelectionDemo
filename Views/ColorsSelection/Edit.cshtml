@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+@using (Html.BeginForm())
+{
+    @Helper.SelectionLists("selectedColorsId", (SelectList)ViewBag.SelectedColors, (SelectList)ViewBag.AllColors)
+
+    <input type="submit" value="Soumettre" class="form-control" />
+}
+
+@section Scripts {
+
+
+    <script>
+        $(() => {
+            $("option").each(function (index, option) {
+                let hex = option.text.split(" ")[0];
+                $(this).attr("style", `color:${getContrast(hex)}; background-color:${hex}`);
+            })
+        })
+        
+    </script>
+}
