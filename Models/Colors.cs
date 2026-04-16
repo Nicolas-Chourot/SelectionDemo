@@ -198,7 +198,7 @@ namespace SelectionDemo.Models
         private void Add(string name, string hex)
         {
             index++;
-            Items.Add(new Color { Id = index, Name = name, Hex = hex });
+            Items.Add(new Color { Id = index, Name = name, Hex = hex.ToUpper() });
         }
 
         public List<Color> ToList() => Items.ToList();

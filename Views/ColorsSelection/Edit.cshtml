@@ -1,9 +1,9 @@
 ﻿
-@{
-    ViewBag.Title = "Edit";
-}
+@{ ViewBag.Title = "Edit"; }
 
-<h2>Edit</h2>
+<h2>Sélection de couleurs</h2>
+<hr />
+
 @using (Html.BeginForm())
 {
     @Helper.SelectionLists("selectedColorsId", (SelectList)ViewBag.SelectedColors, (SelectList)ViewBag.AllColors)
@@ -13,8 +13,6 @@
 }
 
 @section Scripts {
-
-
     <script>
         $(() => {
             $("option").each(function (index, option) {
